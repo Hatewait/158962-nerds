@@ -6,97 +6,176 @@
   </head>
   <body>
   	<header>
-  		<div>
-  			<img class="header-logo" src="#" width="" height="" alt="нёрдс">
-  		</div>
-  		<nav>
-  			<ul>
-  				<li>
-  					<a href="#">студия</a>
-  					<a href="#">клиенты</a>
-  					<a href="#">магазин</a>
-  					<a href="#">контакты</a>
-  				</li>
-  			</ul>
-  		</nav>
-  		<div class="user-block">
-  			<a class="login" href="#">корзина</a>
-		</div>
-		<h1> Добро пожаловать в магазин готовых макетов</h1>
+  		<div class="header-wrapper">
+  			<div>
+  				<img class="header-logo" src="#" width="" height="" alt="нёрдс">
+  			</div>
+  			<nav class="main-navigation">
+  				<ul>
+  					<li>
+  						<a href="#">студия</a>
+  						<a href="#">клиенты</a>
+  						<a href="#">магазин</a>
+  						<a href="#">контакты</a>
+  					</li>
+  				</ul>
+  			</nav>
+  			<div class="cart">
+  				<a href="#">корзина</a>
+				</div>
+				<h1> Добро пожаловать в магазин готовых макетов</h1>
+			</div>
   	</header>
-  	<div class="wrapper">
-  		<div class="parameters">
-  			<p><b>Стоимость:</b></p>
-  			<span>от</span>
-  			<span class="price">0</span>
-  			<span>до</span>
-  			<span class="price">15000</span>
-  			<form action="#">
-             	<p><b>Сетка:</b></p>
-    			<p><input name="text" type="radio" value="Adaptive" checked>Адаптивная</p>
-    			<p><input name="text" type="radio" value="fix">Фиксированная</p>
-    			<p><input name="text" type="radio" value="rubber" >Резиновая</p>	
-  			</form> 
-  			<form action="#">
-             	<p><b>Особенности:</b></p>
-    			<p><input name="text" type="checkbox" value="slider" checked>Слайдер</p>
-    			<p><input name="text" type="checkbox" value="feature">Блок преимуществ</p>
-    			<p><input name="text" type="checkbox" value="news" checked>Новости</p>
-    			<p><input name="text" type="checkbox" value="gallery">Галерея</p>
-    			<p><input name="text" type="checkbox" value="cart">Корзина</p>			
-  			</form> 
-  		</div>
-  		<div class="select">
-  			<span><b>сортировать</b></span>
-  			<ul>
-  				<li>по цене</li>
-  				<li>по типу</li>
-  				<li>по функционалу</li>
-  			</ul>
-  		</div>
-  		<div class="templates">
-  			<img src="#" width="#" height="#">
-  			<img src="#" width="#" height="#">
-  			<img src="#" width="#" height="#">
-  			<img src="#" width="#" height="#">
-  			<img src="#" width="#" height="#">
-  			<img src="#" width="#" height="#">
-  		</div>
-  		<div class="pages">
-  			<ul>
-  				<li>
-  					<a href="#">1</a>
-  				</li>
-  				<li>
-  					<a href="#">2</a>
-  				</li>
-  				<li>
-  					<a href="#">3</a>
-  				</li>
-  				<li>
-  					<a class="next" href="#">следующая</a>
-  				</li>
-  			</ul>
-  		</div>
-  		<div class="find-us">
-  			<img src="#" width="#" height="#">
-  			<img class="logo-arrow" src="#" width="#" height="#">
+  	<div class="main-content">
+  		<div class="content-wrapper">
+  			<div class="parameters">
+  				<form action="#">
+  					<label>Стоимость:</label>
+  					<label class="from">от</label>
+  					<input class="price" type="text" value="0">
+  					<label class="to">до</label>
+  					<input class="price" type="text" value="15000">
+  					<label>Сетка:</label>
+  					<ul>
+  						<li>
+  							<input class="adaptive" name="sort" type="radio" value="adaptive" checked>
+    				  	<label>Адаптивная</label>
+    				  </li>
+    					<li>
+    						<input class="fix" name="sort" type="radio" value="fix">
+    						<label>Фиксированная</label>
+    					</li>
+    					<li>
+    						<input class="rubber" name="sort" type="radio" value="rubber">
+    						<label>Резиновая</label>
+    					</li>
+    				</ul>
+  				  <label>Особенности:</label>
+          	<ul>
+          		<li>
+          			<input class="slider" name="specific" type="checkbox" value="slider" checked>
+          			<label>Слайдер</label>
+          		</li>
+          		<li>
+          			<input class="feature" name="specific" type="checkbox" value="feature">
+          			<label>Блок преимуществ</label>
+          		</li>
+    					<li>
+    						<input class="news" name="specific" type="checkbox" value="news" checked>
+    						<label>Новости</label>
+    					</li>
+    					<li>
+    						<input class="gallery" name="specific" type="checkbox" value="gallery">
+    						<label>Галерея</label>
+    					</li>
+    					<li>
+    						<input class="cart" name="specific" type="checkbox" value="cart">
+    						<label>Корзина</label>
+    					</li>
+    				</ul>	
+    				<input type="button" value="Показать">		
+  				</form> 
+  			</div>
+  			<div class="template">
+  				<div class="select">
+  					<span><b>сортировать</b></span>
+  					<ul class="select-list">
+  						<li class="list-item"><a href="#">по цене</a></li>
+  						<li class="list-item"><a href="#">по типу</a></li>
+  						<li class="list-item"><a href="#">по функционалу</a></li>
+  					</ul>
+  					<div class="arrows">
+  						<!--Как сделать стрелочки?)-->
+  					</div>
+  	 			</div>
+  				<div class="template-pictures">
+  					<ul class="template-list">
+  						<li>
+  							<img src="#" width="#" height="#">
+  							<div class="aviator">
+  								<h3>Aviator</h3>
+  								<p>Одностраничный макет с авторским дизайном</p>
+  								<input type="text" name="price" value="8000 р."> <!--А зачем у инпута имя? Его обязательно писать?-->
+  							</div>
+  						</li>
+  						<li>
+  							<img src="#" width="#" height="#">
+  							<div class="sunset">
+  								<h3>Sunset</h3>
+  								<p>Интернет магазин с личным кабинетом</p>
+  								<input class="activе hover click" type="text" name="price" value="10000 р.">
+  							</div>
+  						</li>
+  						<li>
+  							<img src="#" width="#" height="#">
+  							<div class="third"> <!--не нашла в стайлгайде описания следующим картинкам(-->
+  								<h3></h3>
+  								<p></p>
+  								<input type="text">
+  							</div>
+  						</li>
+  						<li>
+  							<img src="#" width="#" height="#">
+  							<div class="fourth">
+  								<h3></h3>
+  								<p></p>
+  								<input type="text">
+  							</div>
+  						</li>
+  						<li>
+  							<img src="#" width="#" height="#">
+  							<div class="fifth">
+  								<h3></h3>
+  								<p></p>
+  								<input type="text">
+  							</div>
+  						</li>
+  						<li>
+  							<img src="#" width="#" height="#">
+  							<div class="sixth">
+  								<h3></h3>
+  								<p></p>
+  								<input type="text">
+  							</div>
+  						</li>
+  					</ul>
+  				</div>
+					<div class="paginator">
+  					<ul>
+  						<li class="active">1</li>
+  						<li>
+  							<a href="#">2</a>
+  						</li>
+  						<li>
+  							<a href="#">3</a>
+  						</li>
+  						<li>
+  							<a class="next" href="#">следующая</a>
+  						</li>
+  					</ul>
+  				</div>
+  			</div>
+  			<div class="find-us">
+  				<img src="#" width="#" height="#">
+  				<img class="logo-arrow" src="#" width="#" height="#">
   			<div class="contacts">
   				<h3> NЁrds design studio</h3>
   				<p>350000, Краснодар, ул.Головатого, 100 тел+7(861)275-75-57</p>
   				<a href="#">Напишите нам</a>
+  			</div>
   			</div>
   		</div>
   	</div>
   	<footer>
   		<div class="social">
   			<a href="#" class="social-btn social-btn-vk">Вконтакте</a>
-			<a href="#" class="social-btn social-btn-fb">Фейсбук</a> 
-			<a href="#" class="social-btn social-btn-inst">Инстаграм</a>
+				<a href="#" class="social-btn social-btn-fb">Фейсбук</a> 
+				<a href="#" class="social-btn social-btn-inst">Инстаграм</a>
   		</div>
   		<div class="social-text">
   			<p>Давайте дружить, это выгодно!<p>
-			<p class="discount">Скидка 10% для друзей из социальных сетей.<p>
+				<p class="discount">Скидка 10% для друзей из социальных сетей.<p>
   		</div>
   	</footer>
   </body>
+  </html>
