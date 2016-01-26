@@ -1,130 +1,151 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
-  </head>
-  <body><!--Выравнивание ранее было 4 пробела, я пишу код в саблайме, здесь в редакторе всё ровно, но при копировании в гитхаб, съехало(( Поменяла на два пробела, посмотрим-->
-  	<header> <!-- здесь обязательно именовать класс, если хедер один на странице?-->
-  		<div class="header-wrapper"> <!--То есть этот блок является контейнером-центровщиком для хедера или нужно полностью всё тело обернуть в блок центровщик?-->
-  			<img class="header-logo" src="#" width="" height="" alt="нёрдс"> <!--Для логотипа нужен отдельный   контейнер в данном случае или не обязательно? -->
-  		<nav class="main-navigation">
-  			<ul>
-  				<li><a href="#">студия</a></li>
-  				<li><a href="#">клиенты</a></li>
-  				<li><a href="#">магазин</a></li>
-  				<li><a href="#">контакты</a></li>
-  			</ul>
-  		</nav>
-  		<div class="cart"> <!--Подсмотрела в демке по барбершопу, что так оформляют вход, сделала по аналогии, но не понимаю, почему она не в списке nav?, почему она отдельным дивом идет..? -->
-  			<a href="#">корзина</a>
-  		</div>
-  	</div>
-  	</header>
-		<div class="slider"> <!--Этот див может служить центровщиком для слайдера?-->
-			<div class="slider-content">
-				<b>Долго, дорого, скрупулезно</b>
+<head>
+	<meta charset="utf-8">
+	<title>HTML Academy: Нёрдс</title>
+</head>
+<body>
+	<header class="main-header">
+		<div class="align-center"> <!--центровщик-->
+			<div class="header-logo">
+				<img  src="#" width="" height="" alt="нёрдс">
+			</div>
+			<nav class="main-navigation">
+				<ul>
+					<li><a href="#">студия</a></li>
+					<li><a href="#">клиенты</a></li>
+					<li><a href="#">магазин</a></li>
+					<li><a href="#">контакты</a></li>
+				</ul>
+				<div class="cart">
+					<a href="#">корзина</a>
+				</div>
+			</nav>	
+		</div>
+	</header>
+	<div class="slider">
+		<div class="align-center"> 
+			<div class="slider-1">
+				<h2>Долго, дорого, скрупулезно</h2>
 				<p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-				<a class="slider-btn" href="#">Узнать больше</a>
+				<img src="#" alt="галерея">
+				<a class="btn slider-btn" href="#">Узнать больше</a>
+			</div>
+			<div class="slider-2">
+				<h2>Только наркотики,только хардкор!</h2>
+				<p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+				<img src="#" alt="галерея">
+				<a class="btn slider-btn" href="#">Узнать больше</a>
+			</div>
+			<div class="slider-3">
+				<h2>Любите ли вы математику,как любим ее мы?</h2>
+				<p>Нашим дизайнерам мы удаляем нейроны, ответственные за креатив, чтобы дать им возможность всё просчитать.
+				</p>
+				<img src="#" alt="галерея">
+				<a class="btn slider-btn" href="#">Узнать больше</a>
 			</div>
 			<div class="nav-points">
-				<input type="radio" name="point" class="slide1">
-				<input type="radio" name="point" class="slide2">
-				<input type="radio" name="point" class="slide3">
+				<input type="radio" name="indicator" class="point slide1">
+				<input type="radio" name="indicator" class="point slide2">
+				<input type="radio" name="indicator" class="point slide3">
 			</div>
-				<figure class="slider-gallery"><!--Не поняла про описание трех слайдов(( Вижу только одну картинку на макете, в стайлгайде ни слова про это..-->
-					<img src="#" alt="галерея">
-				</figure>
-		</div>
-  	<div class="main-content">
-  		<div class="content-wrapper"> <!--То есть этот блок будет служить центровщиком?-->
-  			<div class="offer">
-  				<div class="offer-block">
-  					<img class="offer-pic" src="#" width="" height="">
-  					<h3>Веб-сайты</h3>
-  					<p>Мир никогда не будет прежним после того, как увидит ваш сайт!</p>
-  					<a class="btn-order hover click" href="#">Заказать</a> <!--У нас три состояния кнопки, три класса подряд пишем? -->
-  				</div>
-  				<div class="offer-block">
-  					<img class="offer-pic" src="#" width="" height="">
-  					<h3>Приложения</h3>
-  					<p>Покорите топ-10 приложений в Appstore и Google play.</p>
-  					<a class="btn-order hover click" href="#">Заказать</a> 
-  				</div>
-  				<div class="offer-block">
-  					<img class="offer-pic" src="#" width="" height="">
-  					<h3>Презентации</h3>
-  					<p>Вы даже не подозреваете, насколько вы изумительны!</p>
-  					<a class="btn-order hover click" href="#">Заказать</a>
-  				</div>
-  			</div>
-  			<div class="about-us">
-  				<div class="advantages">
-  					<h2>Мы - маленькая, но гордая дизайн-студия из Краснодара.</h2>
-  					<p>
-  						Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива.Работаем не покладая рук, как роботы.    
-  					</p>
-  					<span>Выполняем заказы на разработку</span>
-  					<ul class="advantages-list1"><!--А если стилизовать .advantages ul - это не будет применимо только лишь к этому списку? Или применится и ко всему с классом .advantages тоже? -->
-  					<li>Веб-сайтов любой сложности</li>
+		</div> <!-- end align-center-->
+	</div> <!--end slider-->	
+	<div class="main-content">
+		<div class="align-center"> 
+			<div class="offer">
+				<div class="offer-block">
+					<img class="offer-pic" src="#" width="" height="">
+					<h3>Веб-сайты</h3>
+					<p>Мир никогда не будет прежним после того, как увидит ваш сайт!</p>
+					<a class="btn btn-order-red" href="#">Заказать</a> 
+				</div>
+				<div class="offer-block">
+					<img class="offer-pic" src="#" width="" height="">
+					<h3>Приложения</h3>
+					<p>Покорите топ-10 приложений в Appstore и Google play.</p>
+					<a class="btn btn-green" href="#">Заказать</a> 
+				</div>
+				<div class="offer-block">
+					<img class="offer-pic" src="#" width="" height="">
+					<h3>Презентации</h3>
+					<p>Вы даже не подозреваете, насколько вы изумительны!</p>
+					<a class="btn btn-yellow" href="#">Заказать</a>
+				</div>
+			</div>
+			<div class="about-us">
+				<div class="advantages">
+					<h2>Мы - маленькая, но гордая дизайн-студия из Краснодара.</h2>
+					<p>
+						Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива.Работаем не покладая рук, как роботы.    
+					</p>
+					<h4>Выполняем заказы на разработку</h4>
+					<ul class="advantages-list">
+						<li>Веб-сайтов любой сложности</li>
 						<li>Мобильных приложений для IOS и Android</li>
 						<li>Слайдшоу и видео для корпоративных презентаций</li>
-  					</ul>
-  				</div>
-  			<div class="features">
-  				<figure class="nerds-logo">
-  					<img src="#" alt="nerds">
-  					<figcaption>Since 2004</figcaption>
-  				</figure>
-  				<h3>Как мы работаем</h3><!--Так как на странице уже есть h3, нужно ли класс писать в нем? Или через класс родителя можно стилизовать будет?-->
-  				<ul class="advantages-list2">
-  					<li>C самоотдачей 146%</li>
-					<li>Соблюдая сроки на 100%</li>
-					<li>По предопалате 50%</li>
-  				</ul>
-  			</div>
-  		</div>
-  			<div class="partners">
-  				<ul class="partners-list">
-  					<li>
-  						<a class="activ hover click" href="#"><img src="#" width="#" height="#"></a>
-  					</li> <!--в стайлгайде три состояния, их нужно прописать в классах? -->
-  					<li>
-  						<a class="activ hover click" href="#"><img src="#" width="#" height="#"></a>
-  					</li>
-  					<li>	
-  						<a class="activ hover click" href="#"><img src="#" width="#" height="#"></a>
-  					</li>
-  				</ul>
-  			</div>
-  		</div>
-  		<div class="find-us">
-  			<img src="#" width="#" height="#">
-  			<div class="contacts"> <!--Квадратик с адресом нужно оставить или его тоже можно будет "вклеить"?-->
-  				<h3> NЁrds design studio</h3>
-  				<p>191186, Санкт-Петербург,ул. Б. Конюшенная, д. 19/8</p>
-  				<p> тел. +7 (812) 275-75-75</p>
-  				<a class="btn-contact" href="#">Напишите нам</a>
-  			</div>
-  		</div>
-  	</div>
-  	<footer>
-  		<div class="footer-wrapper">
-  			<div class="social">
-  				<a href="#" class="social-btn social-btn-vk">Вконтакте</a>
-					<a href="#" class="social-btn social-btn-fb">Фейсбук</a> 
-					<a href="#" class="social-btn social-btn-inst">Инстаграм</a>
-  			</div>
-  			<div class="social-text">
-  				<h3>Давайте дружить, это выгодно!</h3>
-  				<p class="discount">Скидка 10% для друзей из социальных сетей.</p>
-  			</div>
+					</ul>
+				</div>
+				<div class="features">
+					<figure class="nerds-logo">
+						<img src="#" alt="nerds">
+						<figcaption>Since 2004</figcaption>
+					</figure>
+					<h3>Как мы работаем</h3>
+					<ul class="advantages-list">
+						<li>C самоотдачей 146%</li>
+						<li>Соблюдая сроки на 100%</li>
+						<li>По предопалате 50%</li>
+					</ul>
+				</div>
 			</div>
-			</footer>
-  	<form action="#">
-  		<label for="username">Ваше имя:</label>
-  		<input class="hover active" id="username" type="text" value="Представьтесь,пожалуйста"> <!--Нужно ли в классе прописывать первое состояние(покоя)?-->
-  		<input class="hover click" type="button" value="Показать">
-  	</form>
-  </body>
+			<div class="partners">
+				<ul class="partners-list">
+					<li>
+						<a class="Glukhanko" href="#"><img src="#" width="#" height="#"></a>
+					</li> 
+					<li>
+						<a class="Html-Academy" href="#"><img src="#" width="#" height="#"></a>
+					</li>
+					<li>	
+						<a class="Barbershop" href="#"><img src="#" width="#" height="#"></a>
+					</li>
+				</ul>
+			</div>
+		</div> <!--end align-center -->
+		<div class="find-us">
+			<img src="#" width="#" height="#">
+			<div class="contacts"> <!--Квадратик с адресом нужно оставить или его тоже можно будет "вклеить"?-->
+				<h3> NЁrds design studio</h3>
+				<p>191186, Санкт-Петербург,ул. Б. Конюшенная, д. 19/8</p>
+				<p> тел. +7 (812) 275-75-75</p>
+				<a class="btn btn-contact" href="#">Напишите нам</a>
+			</div>
+		</div>
+	</div>
+	<footer class="main-footer">
+		<div class="align-center">
+			<div class="social">
+				<a href="#" class="social-btn social-btn-vk">Вконтакте</a>
+				<a href="#" class="social-btn social-btn-fb">Фейсбук</a> 
+				<a href="#" class="social-btn social-btn-inst">Инстаграм</a>
+			</div>
+			<div class="social-text">
+				<h3>Давайте дружить, это выгодно!</h3>
+				<p class="discount">Скидка 10% для друзей из социальных сетей.</p>
+			</div>
+		</div>
+	</footer>
+	<div class="pop-up">
+		<form action="#">
+			<label for="username">Ваше имя:</label> <br>
+			<input class="field" id="username" type="text" value="Представьтесь,пожалуйста"> <br>
+			<label for="mail">Ваш e-mail</label> <br>
+			<input class="field" id"mail" type="e-mail" value="Для отправки ответа"> <br>
+			<label for="letter">Текст письма</label> <br>
+			<textarea class="text-field" name="text" id="letter" cols="30" rows="10">В свободной форме</textarea>
+			<input class="pop-up-btn btn-red" type="button" value="Закрыть">
+		</form>
+	</div>
+</body>
 </html>
