@@ -5,3 +5,19 @@ body {
 	font-weight: normal;
 	font-family: roboto medium;
 }
+.slider-heading {
+	font-family: Arial, Helvetica, sans-serif, Roboto;
+	font-size: 36px;
+	font-weight: bold;
+	font-weight: bold;
+	line-height: 36px;
+	color: #000000;
+
+}
+.main-heading {
+	font-family: Arial, Helvetica, sans-serif, Roboto;
+	font-size: 40px;
+	font-weight: normal;
+	line-height: 46px; 
+	color: #000000;
+}
