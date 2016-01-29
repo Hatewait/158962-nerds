@@ -2,12 +2,12 @@
 <html lang="ru">
 <head>
 	<meta charset="utf-8">
-	<title>HTML Academy:Каталог</title>
+	<title>NERDS:Каталог</title>
 	<link rel="stylesheet" href="css/style.css.css">
 </head>
 <body>
-	<header>
-		<div class="align-center">
+	<header class="main-header">
+		<div class="container">
 			<a class="header-logo" href="#">
 				<img  src="img/logo.jpg" width="139" height="56" alt="нёрдс">
 			</a>
@@ -22,52 +22,52 @@
 					<a href="#">корзина</a>
 				</div>
 			</nav>	
-			<h2> Добро пожаловать в магазин готовых макетов</h2>
-		</div> <!--end align-center-->
-	</header>
+			<h1 class="main-heading"> Добро пожаловать в магазин готовых макетов</h1>
+		</div> <!--end container-->
+	</header> <!--end main-header -->
 	<div class="main-content">
-		<div class="align-center">
+		<div class="container">
 			<div class="parameters">
 				<form action="#">
-					<label>Стоимость:</label>
+					<h3>Стоимость:</h3>
 					<label class="cost from">от</label>
 					<input class="price" type="text" value="0">
 					<label class="cost to">до</label>
 					<input class="price" type="text" value="15000">
 					<h3>Сетка:</h3>
-					<ul class="type">
-						<li class="adaptive">
+					<ul class="parameters-list">
+						<li class="type-item">
 							<input name="sort" id="adaptive" type="radio" value="adaptive" checked>
 							<label for="adaptive">Адаптивная</label>
 						</li>
-						<li class="fix">
+						<li class="type-item">
 							<input name="sort" id="fix" type="radio" value="fix">
 							<label for="fix">Фиксированная</label>
 						</li>
-						<li class="rubber">
+						<li class="type-item">
 							<input name="sort" id="rubber" type="radio" value="rubber">
 							<label for="rubber">Резиновая</label>
 						</li>
 					</ul>
 					<h3>Особенности:</h3>
-					<ul>
-						<li>
+					<ul class="parameters-list">
+						<li class="type-item">
 							<input class="slider" id="slider" name="specific" type="checkbox" value="slider" checked>
 							<label for="slider">Слайдер</label>
 						</li>
-						<li>
+						<li class="type-item">
 							<input class="feature" id="feature" name="specific" type="checkbox" value="feature">
 							<label for="feature">Блок преимуществ</label>
 						</li>
-						<li>
+						<li class="type-item">
 							<input class="news" id="news" name="specific" type="checkbox" value="news" checked>
 							<label for="news">Новости</label>
 						</li>
-						<li>
+						<li class="type-item">
 							<input class="gallery" id="gallery" name="specific" type="checkbox" value="gallery">
 							<label for="gallery">Галерея</label>
 						</li>
-						<li>
+						<li class="type-item">
 							<input class="cart" id="cart" name="specific" type="checkbox" value="cart">
 							<label for="cart">Корзина</label>
 						</li>
@@ -86,10 +86,10 @@
 					<div class="arrows">
 						<ul class="arrows-list">
 							<li>
-								<a href="#"></a>
+								<a class="arrow-down" href="#"></a>
 							</li>
 							<li>
-								<a href="#"></a>
+								<a class="arrow-up" href="#"></a>
 							</li>
 						</ul>
 					</div>
@@ -164,37 +164,39 @@
 			<div class="find-us">
 				<img src="img/map.jpg" width="1199" height="416">
 				<div class="contacts"> 
-					<h3> NЁrds design studio</h3>
+					<h3 class="contacts-heading"> NЁrds design studio</h3>
 					<p>191186, Санкт-Петербург,ул. Б. Конюшенная, д. 19/8</p>
 					<p> тел. +7 (812) 275-75-75</p>
 					<a class="btn btn-contact" href="#">Напишите нам</a>
-				</div>
+				</div> <!-- end contacts-->
 			</div> <!-- find-us-->
-		</div> <!-- end align-center-->
-	</div> <!-- end main-content-->
-	<footer>
-		<div class="social">
-			<a href="#" class="social-btn social-btn-vk">Вконтакте</a>
-			<a href="#" class="social-btn social-btn-fb">Фейсбук</a> 
-			<a href="#" class="social-btn social-btn-inst">Инстаграм</a>
+		</div> <!-- end container-->
+	</div><!-- end main-content-->
+	<footer class="main-footer">
+		<div class="container">
+			<div class="social">
+				<a href="#" class="social-btn social-btn-vk">Вконтакте</a>
+				<a href="#" class="social-btn social-btn-fb">Фейсбук</a> 
+				<a href="#" class="social-btn social-btn-inst">Инстаграм</a>
+			</div>
 		</div>
 		<div class="social-text">
 			<p>Давайте дружить, это выгодно!<p>
-				<p class="discount">Скидка 10% для друзей из социальных сетей.<p>
-				</div>
-			</footer>
-			<div class="pop-up">
-				<form action="#">
-					<label for="username">Ваше имя:</label> <br>
-					<input class="field" id="username" type="text" value="Представьтесь,пожалуйста"> <br>
-					<label for="mail">Ваш e-mail</label> <br>
-					<input class="field" id"mail" type="e-mail" value="Для отправки ответа"> <br>
-					<label for="letter">Текст письма</label> <br>
-					<textarea class="text-field" name="text" id="letter" cols="30" rows="10">
-						В свободной форме
-					</textarea>
-					<input class="pop-up-btn btn-red" type="button" value="Закрыть">
-				</form>
-			</div>
-		</body>
-		</html>
+			<p class="discount">Скидка 10% для друзей из социальных сетей.<p>
+		</div>
+	</footer>
+	<div class="pop-up">
+		<form class="pop-up-form" action="#">
+			<label class="user-field" for="username">Ваше имя:</label> <br>
+			<input class="field" id="username" type="text" value="Представьтесь,пожалуйста"> <br>
+			<label class="user-field" for="e-mail">Ваш e-mail</label> <br>
+			<input class="field" id"e-mail" type="e-mail" value="Для отправки ответа"> <br>
+			<label class="textarea" for="letter">Текст письма</label> <br>
+			<textarea class="text-field" name="text" id="letter" placeholder="В свободной форме" cols="30" 
+				rows="10">
+			</textarea>
+			<input class="pop-up-btn btn-red" type="button" value="Закрыть">
+		</form>
+	</div>
+</body>
+</html>
