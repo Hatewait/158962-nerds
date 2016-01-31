@@ -7,6 +7,7 @@ body {
 	
 }
 .slider-heading {
+	font-family: Roboto, Arial, Helvetica, sans-serif;
 	font-size: 36px;
 	font-weight: bold;
 	line-height: 36px;
@@ -14,8 +15,10 @@ body {
 
 }
 .main-heading {
+	font-family: Roboto, Arial, Helvetica, sans-serif;
 	font-size: 40px;
 	font-weight: normal;
 	line-height: 46px; 
 	color: #000000;
 }
+
