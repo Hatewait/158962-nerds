@@ -37,22 +37,24 @@
 					<h3>Сетка:</h3>
 					<ul class="parameters-list">
 						<li class="type-item">
-							<input name="radio-item" id="adaptive" type="radio" value="adaptive" checked>
+							<input class="radio-item" name="radio-btn" id="adaptive" type="radio" value="adaptive" 
+								checked>
 							<label for="adaptive">Адаптивная</label>
 						</li>
 						<li class="type-item">
-							<input name="radio-item" id="fix" type="radio" value="fix">
+							<input class="radio-item" name="radio-btn" id="fix" type="radio" value="fix">
 							<label for="fix">Фиксированная</label>
 						</li>
 						<li class="type-item">
-							<input name="radio-item" id="rubber" type="radio" value="rubber">
+							<input class="radio-item" name="radio-btn" id="rubber" type="radio" value="rubber">
 							<label for="rubber">Резиновая</label>
 						</li>
 					</ul>
 					<h3>Особенности:</h3>
 					<ul class="parameters-list">
 						<li class="type-item">
-							<input class="checkbox-item" id="slider" name="specific" type="checkbox" value="slider" checked>
+							<input class="checkbox-item" id="slider" name="specific" type="checkbox" 
+								value="slider" 	checked>
 							<label for="slider">Слайдер</label>
 						</li>
 						<li class="type-item">
@@ -181,22 +183,23 @@
 			</div>
 			<div class="social-text">
 				<p>Давайте дружить, это выгодно!<p>
-					<p class="discount">Скидка 10% для друзей из социальных сетей.<p>
-					</div>
-				</div>
-			</footer>
-			<div class="pop-up">
-				<form class="pop-up-form" action="#">
-					<label class="user-field" for="username">Ваше имя:</label> 
-					<input class="field" id="username" type="text" placeholder="Представьтесь,пожалуйста"> 
-					<label class="user-field" for="email">Ваш e-mail</label> 
-					<input class="field" id="email" type="email" placeholder="Для отправки ответа"> 
-					<label class="textarea" for="letter">Текст письма</label> 
-					<textarea class="text-field" name="text" id="letter" placeholder="В свободной форме" cols="30" 
-					rows="10">
-				</textarea>
-				<input class="pop-up-btn btn-red" type="submit" value="Закрыть">
-			</form>
+				<p class="discount">Скидка 10% для друзей из социальных сетей.<p>
+			</div>
 		</div>
-	</body>
-	</html>
+	</footer>
+	<div class="pop-up">
+		<form class="pop-up-form" action="#">
+			<label class="user-field" for="username">Ваше имя:</label> 
+			<input class="field" id="username" type="text" placeholder="Представьтесь,пожалуйста"> 
+			<label class="user-field" for="email">Ваш e-mail</label> 
+			<input class="field" id="email" type="email" placeholder="Для отправки ответа"> 
+			<label class="textarea" for="letter">Текст письма</label> 
+			<textarea class="text-field" name="text" id="letter" placeholder="В свободной форме" cols="30" 
+				rows="10">
+			</textarea>
+			<input class="pop-up-btn btn-red" type="submit" value="Отправить">
+			<button class="btn-close" type="reset">X</button>
+		</form>
+	</div>
+</body>
+</html>
