@@ -1,5 +1,5 @@
 html,body {
-	min-width: 1200px;
+	min-width: 900px;
  	margin: 0;
  	padding: 0;
 }
@@ -12,12 +12,15 @@ body {
 	background-color: #ffffff;
 	
 }
-ul {
-	list-style: none;
+.clearfix::after {
+    content:'';
+    display:table;
+    clear:both;
 }
-.main-header,.slider {
+.main-header {
 	padding-top: 60px;
 	background-color: #eeeeee;
+	margin-bottom: 80px;
 }
 .container {
 	width: 880px;
@@ -42,6 +45,7 @@ ul.main-navigation-list {
 	padding-left: 0px;
 	float: left;
 	margin-right: 70px;
+	list-style: none;
 }
 .list-item {
 	display: inline;
@@ -78,24 +82,103 @@ ul.main-navigation-list {
 	padding-top: 80px;
 	padding-bottom: 85px;
 }
-.slider-content {
-	padding-bottom: 80px;
-	margin-bottom: 80px;
+.slider {
+  width: 880px;
+  margin: 0 auto;
+  position: relative;
+
 }
-.slider-description  {
-	width: 380px;
-	float: left;
+.slide {
+  min-height: 310px;
+  background-repeat: no-repeat;
+  background-position: 100% 10px;
+
 }
-.slider-image {
-	width: 340px;
-	float: right;
+.slider input[type="radio"] {
+  display: none;
 }
-.nav-points {
-	display: inline-block;
+.slider-controls label {
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  margin: 0 3px;
+  vertical-align: top;
+  background: #ffffff;
+  border: 3px solid white;
+  border-radius: 50%;
+  cursor: pointer;
 }
-.slider-2, .slider-3, .image-2, .image-3 {
-	display: none;
+.slider-controls {
+  position: absolute;
+  bottom: 95px;
+  left: 50%;
+  width: 200px;
+  margin-left: -100px;
+  text-align: center;
+
 }
+
+.slide-text {
+  width: 500px;
+  padding: 30px 0;
+}
+.slide-title {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 36px;
+}
+.slide p {
+  font-weight: 500;
+  line-height: 22px;
+  color: #283136;
+}
+.slide .btn {
+  font-weight: 300;
+  font-size: 12px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background: #fb565a;
+  display: block;
+  width: 220px;
+  margin-top: 25px;
+  padding: 12px 10px;
+  border-radius: 3px;
+}
+
+.slide:nth-child(1) {
+  background-image: url("../img/content/slide1.png");
+}
+
+.slide:nth-child(2) {
+  background-image: url("../img/content/slide2.png");
+}
+
+.slide:nth-child(3) {
+  background-image: url("../img/content/slide3.png");
+}
+.slide {
+  display: none;
+}
+#btn-1:checked ~ .slides .slide:nth-child(1) {
+  display: block;
+}
+
+#btn-2:checked ~ .slides .slide:nth-child(2) {
+  display: block;
+}
+
+#btn-3:checked ~ .slides .slide:nth-child(3) {
+  display: block;
+}
+#btn-1:checked ~ .slider-controls label[for="btn-1"],
+#btn-2:checked ~ .slider-controls label[for="btn-2"],
+#btn-3:checked ~ .slider-controls label[for="btn-3"] {
+  background: #c1c1c1;
+}
+
 .offer {
 	border-bottom: 2px solid #eeeeee;
 }
@@ -121,9 +204,7 @@ ul.main-navigation-list {
 	width: 240px;
 	float: right;
 }
-div.partners {
-	clear: both;
-	width: 880px;
+.partners {
 	margin-right: 0px;
 	margin-bottom: 70px;
 	border-bottom: 2px solid #eeeeee;
@@ -133,7 +214,7 @@ div.partners {
 }
 .partner-item {
 	display: inline-block;
-	vertical-align: center;
+	vertical-align: middle;
 	padding-top: 50px;
 	padding-right: 100px;
 	padding-bottom: 35px;
@@ -159,11 +240,11 @@ div.partners {
 .template {
 	font-size: 0px;
 	float: right;
-	width: 570px;
+	width: 560px;
 }
 div.select {
 	margin-top: 90px;
-	margin-left: 10px;
+	margin-left: 0px;
 	font-size: 12px;
 
 }
@@ -172,6 +253,7 @@ div.select {
 }
 .select li {
 	display: inline-block;
+	vertical-align: middle;
 	font-size: 12px;
 	padding-right: 40px;
 }
@@ -181,14 +263,14 @@ div.select {
 }
 .template-list li {
 	display: inline-block;
+	vertical-align: middle;
 	font-size: 14px;
 	margin-right: 80px;
-	margin-left: 10px;
+	margin-left: 0px;
 	width: 240px;
 }
 .template-list li:nth-child(2n) {
 	margin-right: 0px;
-	margin-left: 0px;
 }
 .template-list p {
 	display: none;
@@ -208,6 +290,7 @@ div.select {
 }
 .paginator-page {
 	display: inline-block;
+	vertical-align: middle;
 	width: 38px;
 	height: 38px;
 	font-size: 12px;
@@ -217,10 +300,11 @@ div.select {
 .next {
 	width: 140px;
 }
-.clearfix::after {
-    content:'';
-    display:table;
-    clear:both;
+.find-us {
+	background-image: url("../img/contacts/map.jpg");
+	background-position: 50% 50%;
+	height: 416px;
+
 }
 
 .social {
