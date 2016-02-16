@@ -147,17 +147,25 @@
 			</div>
 		</div>
 	</footer>
-	<div class="pop-up">
+	<div class="pop-up clearfix ">
 		<form class="pop-up-form" action="#">
-			<label class="user-field" for="username">Ваше имя:</label> 
-			<input class="field" id="username" type="text" placeholder="Представьтесь,пожалуйста">
-			<label class="user-field" for="email">Ваш e-mail</label>
-			<input class="field" id="email" type="email" placeholder="Для отправки ответа"> 
-			<label class="textarea" for="letter">Текст письма</label> 
-			<textarea class="text-field" name="text" id="letter" placeholder="В свободной форме" cols="30" 
-				rows="10">
-			</textarea>
-			<input class="pop-up-btn btn-red" type="submit" value="Отправить">
+			<div class="username">
+				<label for="username">Ваше имя:</label> 
+				<input id="username" type="text" placeholder="Представьтесь,пожалуйста">
+			</div>
+			<div class="user-email">
+				<label for="email">Ваш e-mail</label>
+				<input id="email" type="email" placeholder="Для отправки ответа"> 
+			</div>
+			<div class="text-field">
+				<label for="letter">Текст письма</label> 
+				<textarea name="text" id="letter" placeholder="В свободной форме" cols="62" 
+					rows="10">
+				</textarea>
+			</div>
+			<div class="submit-btn btn-red">
+				<input type="submit" value="Отправить">
+			</div>
 		</form>
 		<div class="btn-close"></div>
 	</div>
