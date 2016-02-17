@@ -3,9 +3,9 @@
 <head>
 	<meta charset="utf-8">
 	<title>NERDS:Каталог</title>
-	<link rel="stylesheet" href="css/normalize.css.css">
+	<link rel="stylesheet" href="css/normalize.css">
 	<link href='https://fonts.googleapis.com/css?family=Roboto:500' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/style.css.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<header class="main-header">
@@ -21,7 +21,7 @@
 					<li class="list-item"><a href="#">контакты</a></li>
 				</ul>
 				<div class="cart">
-					<a href="#">корзина</a>
+					<a class="active" href="#">корзина</a>
 				</div>
 			</nav>	
 			<h1 class="main-heading"> Добро пожаловать в магазин готовых макетов</h1>
@@ -30,15 +30,17 @@
 	<div class="main-content">
 		<div class="container clearfix">
 			<div class="parameters">
-			<h3 class="range-heading">Стоимость:</h3>
 				<form action="#" method="GET">
+					<h3 class="parameters-heading cost">Стоимость:</h3>
 					<div class="range-filter">
         		<div class="range-controls">
 							<div class="scale">
-            		<div class="bar" style="margin-left: 20%; width: 30%"></div>
+            		<div class="bar" style="margin-left: 20%; width: 30%">
+            			<div class="toggle toggle-min"></div>
+         	    		<div class="toggle toggle-max"></div>
+            		</div>
          		 	</div>
-         		 	<div class="toggle toggle-min"></div>
-         	    <div class="toggle toggle-max"></div>
+         		 <!--лежали здесь-->
         		</div>
         		<div class="price-controls">
         			<label class="min-price">от <input name="min-price" type="text" value="0"></label>
@@ -85,31 +87,31 @@
 							<label for="cart">Корзина</label>
 						</li>
 					</ul>	
-					<input class="btn parameters-btn" type="submit" value="Показать">
+					<input class="parameters-btn" type="submit" value="Показать">
 				</form> 
 				
 			</div> <!-- end parameters-->
 			<div class="template">
 				<div class="select clearfix">
 					<ul class="select-list">
-						<li class="list-item select-sort"><b>сортировать:</b></li>
-						<li class="list-item"><a href="#">по цене</a></li>
-						<li class="list-item"><a href="#">по типу</a></li>
-						<li class="list-item"><a href="#">по функционалу</a></li>
+						<li class="select-list-item select-sort"><b>сортировать:</b></li>
+						<li class="select-list-item"><a href="#">по цене</a></li>
+						<li class="select-list-item"><a href="#">по типу</a></li>
+						<li class="select-list-item"><a href="#">по функционалу</a></li>
 					</ul>
-					<div class="arrows">
+					<div class="arrows-block">
 						<ul class="arrows-list">
 							<li>
-								<a class="arrow-up" href="#"></a>
+								<a class="arrow arrow-up active" href="#"></a>
 							</li>
 							<li>
-								<a class="arrow-down" href="#"></a>
+								<a class="arrow arrow-down" href="#"></a>
 							</li>
 						</ul>
 					</div>
 				</div>
 				<ul class="template-list">
-					<li>
+					<li class="template-list-item">
 						<img src="img/content/photo1.jpg" width="240" height="239" alt="Фото галереи">
 						<div class="description">
 							<h3>Aviator</h3>
@@ -117,7 +119,7 @@
 							<a class="template-price" href="#">8000Р.</a>
 						</div>
 					</li>
-					<li>
+					<li class="template-list-item">
 						<img src="img/content/photo2.jpg" width="240" height="239" alt="Фото галереи">
 						<div class="description">
 							<h3>Sunset</h3>
@@ -125,7 +127,7 @@
 							<a class="template-price" href="#">10000Р.</a>
 						</div>
 					</li>
-					<li>
+					<li class="template-list-item">
 						<img src="img/content/photo3.jpg" width="240" height="239" alt="Фото галереи">
 						<div class="description"> 
 							<h3>Forte</h3>
@@ -133,7 +135,7 @@
 							<a class="template-price" href="#">5000Р.</a>
 						</div>
 					</li>
-					<li>
+					<li class="template-list-item">
 						<img src="img/content/photo4.jpg" width="240" height="239" alt="Фото галереи">
 						<div class="description">
 							<h3>Modern organic Thai</h3>
@@ -141,7 +143,7 @@
 							<a class="template-price" href="#">12000Р.</a>
 						</div>
 					</li>
-					<li>
+					<li class="template-list-item">
 						<img src="img/content/photo5.jpg" width="239" height="239" alt="Фото галереи">
 						<div class="description">
 							<h3>Avenue</h3>
@@ -149,7 +151,7 @@
 							<a class="template-price" href="#">8000Р.</a>
 						</div>
 					</li>
-					<li>
+					<li class="template-list-item">
 						<img src="img/content/photo6.jpg" width="239" height="239" alt="Фото галереи">
 						<div class="description">
 							<h3>Dovetail</h3>
@@ -175,7 +177,9 @@
 			</div> <!-- end template-->
 		</div> <!--end conteiner clearfix -->
 			<div class="find-us">
-			<img src="img/contacts/map.jpg" width="1199" height="416" alt="Карта проезда">
+				<div class="map"> 
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123647!2d30.32089461566686!3d59.938796869048474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1455705789983" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
 			<div class="contacts"> <!--Квадратик с адресом нужно оставить или его тоже можно будет "вклеить"?-->
 				<h3 class="contacts-heading"> NЁrds design studio</h3>
 				<p>191186, Санкт-Петербург,ул. Б. Конюшенная, д. 19/8</p>
@@ -199,23 +203,21 @@
 	</footer>
 	<div class="pop-up clearfix ">
 		<form class="pop-up-form" action="#">
-			<div class="username">
+			<div class="user-block clearfix">
 				<label for="username">Ваше имя:</label> 
 				<input id="username" type="text" placeholder="Представьтесь,пожалуйста">
 			</div>
-			<div class="user-email">
+			<div class="user-block clearfix">
 				<label for="email">Ваш e-mail</label>
 				<input id="email" type="email" placeholder="Для отправки ответа"> 
 			</div>
 			<div class="text-field">
-				<label for="letter">Текст письма</label> 
-				<textarea name="text" id="letter" placeholder="В свободной форме" cols="62" 
-					rows="10">
+				<label for="letter">Текст письма:</label> 
+				<textarea name="text" id="letter" placeholder="В свободной форме" cols="54" 
+					rows="5">
 				</textarea>
 			</div>
-			<div class="submit-btn btn-red">
-				<input type="submit" value="Отправить">
-			</div>
+				<input class="submit-btn btn-red" type="submit" value="Отправить">
 		</form>
 		<div class="btn-close"></div>
 	</div>
