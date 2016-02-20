@@ -877,7 +877,6 @@ input[type="checkbox"]:checked:disabled+label::before {
 	line-height: 18px;
 
 }
-
 .paginator-block {
 	clear: both;
 	min-width: 300px;
@@ -890,7 +889,6 @@ input[type="checkbox"]:checked:disabled+label::before {
 	height: 34px;
 	border: 2px solid #f1f1f1;
 }
-
 .paginator-page {
 	display: inline-block;
 	vertical-align: middle;
@@ -923,7 +921,6 @@ input[type="checkbox"]:checked:disabled+label::before {
 	height: 38px;
 	color: #283136;
 }
-
 .next {
 	width: 110px;
 	padding-left: 30px;
@@ -1080,17 +1077,7 @@ input[type="checkbox"]:checked:disabled+label::before {
 	background-color: #ffffff;
   box-shadow: 0 0 10px 5px #d7dcde;
 }
-/*.pop-up {
-	position: relative;
-	top: 120px;
-	left: 50%;
-	width: 480px;
-	margin: 0 auto;
-	min-height: 335px;
-  padding: 40px 80px;
-	background-color: yellow;
-	padding-top: 60px;
-}*/
+
 .user {
 	width: 188px;
 	height: 18px;
@@ -1140,7 +1127,6 @@ input[type="checkbox"]:checked:disabled+label::before {
 	resize:none; 
 	overflow:auto
 }
-
 .user-block {
 	float: left;
 	width: 218px;
