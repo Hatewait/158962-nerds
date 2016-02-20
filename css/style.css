@@ -209,15 +209,9 @@ body {
 	padding-bottom: 85px;
 	padding-left: 0px;
 }
-.advantages-heading {
-	font-family: Roboto, Arial, Helvetica, sans-serif;
-	font-size: 36px;
-	line-height: 36px;
-	color: #000000;
-	margin-bottom: 15px;
-	margin-top: 60px;
-}
+
 .slide-title {
+	margin-left: -3px;
 	font-family: Roboto, Arial, Helvetica, sans-serif;
 	font-size: 36px;
 	line-height: 36px;
@@ -276,7 +270,7 @@ body {
 	display: block;
 	width: 220px;
 	margin-top: 25px;
-	padding: 12px 10px;
+	padding: 8px 10px;
 	background: #fb565a;
 }
 .slide .btn:hover {
@@ -330,12 +324,17 @@ body {
 	line-height: 22px;
 }
 .offer-heading {
-	margin-top: 0px;
+	margin-top: 7px;
+	margin-bottom: 10px;
 	font-family: Roboto, Arial, Helvetica, sans-serif;
 	font-size: 18px;
 	line-height: 30px;
+	font-weight: 500;
 	color: #000000;
 	text-transform: uppercase;
+}
+.offer-text {
+	margin-bottom: 23px;
 }
 .offer-pic {
 	margin-bottom: 10px;
@@ -346,8 +345,8 @@ body {
 .offer-block .btn {
 	display: block;
 	width: 140px;
-	min-height: 30px;
-	padding-top: 10px;
+	padding-top: 11px;
+  padding-bottom: 7px;
 }
 .btn-red {
 	background-color: #fb565a;
@@ -380,7 +379,7 @@ body {
 	box-shadow: inset 0 3px #a3841f;
 }
 .about-us {
-	padding-bottom: 70px;
+	padding-bottom: 30px;
 	border-bottom: 2px solid #eeeeee;
 }
 .about-us-heading {
@@ -395,10 +394,20 @@ body {
 	float: left;
 	width: 570px;	
 }
+.advantages-heading {
+	font-family: Roboto, Arial, Helvetica, sans-serif;
+	font-size: 36px;
+	line-height: 36px;
+	color: #283136;
+	font-weight: 500;
+	margin-bottom: 15px;
+	margin-top: 68px;
+}
 .advantages-text {
 	font-family: Roboto, Arial, Helvetica, sans-serif;
 	font-size: 16px;
 	line-height: 22px; 
+	font-weight: 500;
 	color: #283136;
 	margin-bottom: 50px;
 }
@@ -408,6 +417,7 @@ body {
 .advantages-list-item {
 	position: relative;
 	padding-left: 35px;
+	padding-bottom: 23px;
 	list-style-type: none;
 }
 .advantages-list-item:before {
@@ -455,13 +465,14 @@ body {
 	border-bottom: 2px solid #eeeeee;
 }
 .partners-list {
+	margin-top: 0px;
 	padding-left: 12px;
 }
 .partner-item {
 	display: inline-block;
 	vertical-align: middle;
-	padding-top: 50px;
-	padding-right: 100px;
+	padding-top: 42px;
+	padding-right: 115px;
 	padding-bottom: 35px;	
 }
 .partner-item a {
@@ -479,7 +490,7 @@ body {
 	margin-right: 0px;
 }
 .nerds-logo {
-	margin-top: 50px;
+	margin-top: 55px;
 	margin-bottom: 65px;
 	margin-left: 30px;
 }
@@ -574,7 +585,7 @@ body {
 .parameters-list {
 	list-style: none;
 	padding-left: 0px;
-	margin-bottom: 15px;
+	margin-bottom: -8px;
 }
 .parameters-btn {
 	font-family: Roboto, Arial, Helvetica, sans-serif;
@@ -590,7 +601,7 @@ body {
 	vertical-align: middle;
 	width: 160px;
 	height: 40px;
-	margin-top: 50px;
+	margin-top: 65px;
 	padding-top: 0px;
 	border: 0 none;
 	border-radius: 3px;
@@ -727,6 +738,7 @@ input[type="checkbox"]:checked:disabled+label::before {
   padding-right: 40px;
 }
 .arrows-list {
+	position: relative;
   margin: 0px;
 }
 .arrows-list li{
@@ -742,15 +754,20 @@ input[type="checkbox"]:checked:disabled+label::before {
   height: 0px;
   border-style: solid;
 }
-.arrow-up {
-  margin-right: 5px;
-  padding-right: 0px;
-  border-width: 0 5.5px 10px 5.5px;
-  border-color: transparent transparent #c1c1c1 transparent;
-}
 .arrow-down {
+	position: absolute;
+	top: 7px;
+	right: 17px;
   border-width: 10px 5.5px 0 5.5px;
   border-color: #c1c1c1 transparent transparent transparent;
+}
+.arrow-up {
+	position: absolute;
+	top: 7px;
+	right: 0px;
+  
+  border-width: 0 5.5px 10px 5.5px;
+  border-color: transparent transparent #c1c1c1 transparent;
 }
 .arrow-up.active {
 	border-color: transparent transparent #00ca74 transparent;
@@ -839,7 +856,7 @@ input[type="checkbox"]:checked:disabled+label::before {
 	background-color: #ffffff;
 	color: #283136;
 	text-align: center;
-	display: non;	
+	display: none;	
 }
 .description .description-heading {
 	margin: 0px;
@@ -866,7 +883,7 @@ input[type="checkbox"]:checked:disabled+label::before {
 	min-width: 300px;
 	min-height: 40px;
 	margin-bottom: 80px;
-	margin-top: 0px;
+	margin-top: -21px;
 }
 .paginator-page {
 	width: 34px;
@@ -890,7 +907,7 @@ input[type="checkbox"]:checked:disabled+label::before {
 }
 .paginator-list {
 	padding-left: 0px;
-	margin-left: 10px;
+	margin-left: 0px;
 	font-size: 0px;
 	list-style: none;
 }
@@ -914,7 +931,7 @@ input[type="checkbox"]:checked:disabled+label::before {
 .map {
 	width: 100%;
 	height: 416px;
-	margin: 10px auto;
+	margin: 0px auto;
 	background-color: #999;
 }
 .find-us {
@@ -937,22 +954,26 @@ input[type="checkbox"]:checked:disabled+label::before {
 	padding-right: 20px;
 }
 .contacts-heading {
+	margin-top: 23px;
 	font-size: 16px;
 	line-height: 30px;
 	color: #000000;
 	text-transform: uppercase;
 }
 .contacts-text {
-	font-family: Roboto, Arial, Helvetica, sans-serif;
-	font-size: 16px;
-	line-height: 20px;
-	color: #666666;
+	margin-bottom: 22px;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #666666;
 }
 .btn-contact {
-	background-color: #fb565a;
-	display: block;
-	padding-top: 14px;
-	padding-bottom: 14px;
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 18px;
+  background-color: #fb565a;
 }
 .btn-contact:hover {
 	background-color: #d6494d;
@@ -983,6 +1004,7 @@ input[type="checkbox"]:checked:disabled+label::before {
 	color: #000000;
 	margin-top: 0px;
 	margin-bottom: 0px;
+	margin-left: -10px;
 }
 .social-btn {
 	position: relative;
@@ -1027,6 +1049,8 @@ input[type="checkbox"]:checked:disabled+label::before {
 	box-shadow: inset 0 3px #9b2d30;
 }
 .discount {
+	margin-top: 5px;
+  margin-left: -9px;
 	font-family: Roboto, Arial, Helvetica, sans-serif;
 	font-size: 16px;
 }
@@ -1075,6 +1099,7 @@ input[type="checkbox"]:checked:disabled+label::before {
 	font-family: Roboto, Arial, Helvetica, sans-serif;
 	font-size: 12px;
 	line-height: 18px;
+	font-weight: 500;
 	color: #000000;
 	text-transform: uppercase;
 	border: 2px solid #d7dcde;
@@ -1092,11 +1117,13 @@ input[type="checkbox"]:checked:disabled+label::before {
 	font-family: Roboto, Arial, Helvetica, sans-serif;
 	font-size: 16px;
 	line-height: 18px;
+	font-weight: 500;
 	font-weight: bold;
 }
 .text-area {
-	width: 424px;
-	min-height: 110px;
+	width: 100%;
+	box-sizing: border-box;
+	height: 110px;
 	margin-top: 13px;
 	margin-right: 0px;
 	margin-bottom: 50px;
@@ -1104,6 +1131,7 @@ input[type="checkbox"]:checked:disabled+label::before {
 	font-family: Roboto, Arial, Helvetica, sans-serif;
 	font-size: 12px;
 	line-height: 18px;
+	font-weight: 500;
 	color: #000000;
 	text-transform: uppercase;
 	border: 2px solid #d7dcde;
@@ -1129,8 +1157,8 @@ input[type="checkbox"]:checked:disabled+label::before {
 	margin-right: 0px;
 }
 .submit-btn {
-	display: inline-block;
-	width: 460px;
+	display: block;
+	width: 100%;
 	height: 40px;
 	margin-top: 0;
 	margin-bottom: 50px;
