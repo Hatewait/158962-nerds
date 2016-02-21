@@ -157,6 +157,9 @@ body {
 	text-transform: uppercase;
 	text-decoration: none;
 }
+.cart .active a {
+	border-bottom: 2px solid #fb565a;
+}
 .cart a:hover {
 	color: #fb565a;
 }
@@ -601,6 +604,11 @@ body {
 	margin-bottom: -8px;
 }
 .parameters-btn {
+	display: block;
+	width: 160px;
+	height: 40px;
+	margin-top: 65px;
+	padding-top: 0px;
 	font-family: Roboto, Arial, Helvetica, sans-serif;
 	font-size: 12px;
 	font-weight: bold;
@@ -610,12 +618,7 @@ body {
 	text-decoration: none;
 	text-align: center;
 	background-color: #f1f1f1;
-	display: block;
 	vertical-align: middle;
-	width: 160px;
-	height: 40px;
-	margin-top: 65px;
-	padding-top: 0px;
 	border: 0 none;
 	border-radius: 3px;
 }
@@ -649,11 +652,11 @@ input[type="radio"]+label::before {
 	border: 4px solid #c1c1c1;
 	border-radius: 50px;
 }
-input[type="radio"]+label::hover::before {
+input[type="radio"]+label:hover::before {
 	content: "";
 	background-image: url("../img/icons/icon-circle-hover.png");
 }
-input[type="radio"]+label::active::before {
+input[type="radio"]+label:active::before {
 	content: "";
 	opacity: 0.3;
 }
@@ -695,10 +698,10 @@ input[type="checkbox"]:checked+label::before {
   height: 23px;
   background-position: -10px -209px;
 }
-input[type="checkbox"]+label::hover::before {
+input[type="checkbox"]+label:hover::before {
   background-position: -10px -123px;
 }
-input[type="checkbox"]:checked+label::hover::before {
+input[type="checkbox"]:checked+label:hover:before {
 	background-position: -10px -295px;
 }
 input[type="checkbox"]:disabled+label::before {
@@ -731,12 +734,11 @@ input[type="checkbox"]:checked:disabled+label::before {
 }
 
 .select {
+	width: 560px;
   margin-left: 0px;
-  font-size: 12px;
-  width: 560px;
   margin-right: 0px;
   margin-bottom: 20px;
-
+  font-size: 12px;
 }
 .select-list {
   float: left;
@@ -747,9 +749,9 @@ input[type="checkbox"]:checked:disabled+label::before {
 }
 .select li {
   display: inline-block;
-  vertical-align: middle;
-  font-size: 12px;
   padding-right: 40px;
+  vertical-align: middle;
+  font-size: 12px; 
 }
 .arrows-list {
 	position: relative;
@@ -779,7 +781,6 @@ input[type="checkbox"]:checked:disabled+label::before {
 	position: absolute;
 	top: 7px;
 	right: 0px;
-  
   border-width: 0 5.5px 10px 5.5px;
   border-color: transparent transparent #c1c1c1 transparent;
 }
@@ -803,9 +804,9 @@ input[type="checkbox"]:checked:disabled+label::before {
 }
 .template {
 	float: right;
-	font-size: 0px;
 	width: 560px;
 	margin-top: 0px;
+	font-size: 0px;
 }
 .template-list {
 	margin: 0px;
@@ -815,13 +816,13 @@ input[type="checkbox"]:checked:disabled+label::before {
 .template-list-item {
 	position: relative;
 	display: inline-block;
-	vertical-align: middle;
-	font-size: 14px;
+	width: 240px;
 	padding-top: 30px;
 	margin-right: 80px;
 	margin-left: 0px;
 	margin-bottom: 74px;
-	width: 240px;
+	vertical-align: middle;
+	font-size: 14px;
 	background-image: url("../img/decoration/sub.png");
 	background-repeat: no-repeat;
 	background-position: left top;
@@ -837,6 +838,12 @@ input[type="checkbox"]:checked:disabled+label::before {
 }
 .template-price {
 	display: block;
+	width: 140px;
+  height: 20px;
+  margin-top: 23px;
+  margin-left: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-weight: 300;
   font-size: 18px;
   text-align: center;
@@ -845,12 +852,6 @@ input[type="checkbox"]:checked:disabled+label::before {
   background-color: #fb565a;
   text-decoration: none;
   vertical-align: middle;
-  width: 140px;
-  height: 20px;
-  margin-top: 23px;
-  margin-left: 30px;
-  padding-top: 10px;
-  padding-bottom: 10px;
   border-radius: 3px;
 }
 .template-price:hover {
