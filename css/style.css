@@ -155,6 +155,10 @@ body {
 .cart a:hover {
 	color: #fb565a;
 }
+.cart a:active {
+	color: #000000;
+	opacity: 0.3;
+}
 .list-item.active a {
 	color: #000000;
 	border-bottom: 2px solid #fb565a;
@@ -314,6 +318,7 @@ body {
 }
 .offer-block {
 	display: inline-block;
+	vertical-align: middle;
 	width: 240px;
 	min-height: 300px;
 	margin-right: 80px;
@@ -919,24 +924,23 @@ input[type="checkbox"]:checked:disabled+label::before {
 }
 .paginator-page {
 	display: inline-block;
-	width: 34px;
-	height: 34px;
+	width: 38px;
+	height: 38px;
 	margin-right: 10px;
 	font-size: 12px;
-	line-height: 34px;
+	line-height: 38px;
 	font-weight: 500;
 	color: #000000;
 	text-transform: uppercase;
-	font-weight: bold;
 	vertical-align: middle;
 	text-align: center;
 	background-color: #f1f1f1;
-	border: 2px solid #f1f1f1;
 	border-radius: 3px;
 }
 
 .paginator-list .active {
 	background-color: #ffffff;
+	box-shadow: inset 0 0 0 2px #f2f2f2;
 }
 .paginator-page a {
 	display: block;
@@ -945,13 +949,14 @@ input[type="checkbox"]:checked:disabled+label::before {
 	text-align: center;
 	color: #000000;
 	font-weight: 500;
+	border-radius: 3px;
 }
 .paginator-page a:hover {
 	background-color: #e5e5e5;
 }
 .paginator-page a:active {
 	background-color: #d5d5d5;
-	box-shadow: inset 0 3px #b5b5b5;
+	box-shadow: inset 0 0 0 2px #f2f2f2;
 }
 .next {
 	width: 135px;
@@ -1033,9 +1038,8 @@ input[type="checkbox"]:checked:disabled+label::before {
 }
 .social-text {
 	float: right;
-	padding-top: 50px;
+	padding-top: 74px;
 	margin-left: 0px;
-	margin-top: 20px;
 	width: 562px;
 	font-family: Roboto, Arial, Helvetica, sans-serif;
 	color: #283136;
@@ -1059,6 +1063,7 @@ input[type="checkbox"]:checked:disabled+label::before {
 	position: absolute;
 	top: 50%;
 	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 	background-image: url("../img/icons/sprite.png");
 	background-repeat: no-repeat;
