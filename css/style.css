@@ -172,15 +172,13 @@ body {
 	width: 15px;
 	height: 15px;
 	background-position: -10px -53px;
-	opacity: 0.3;
+	
 }
 .cart a:hover::before {
 	background-position: -10px -88px;
-	opacity: 1;
 }
 .cart a:active::before {
 	background-position: -10px -53px;
-	opacity: 1;
 }
 .main-content {
 	padding-top: 80px;
