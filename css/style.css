@@ -178,6 +178,10 @@ body {
 	background-position: -10px -88px;
 	opacity: 1;
 }
+.cart a:active::before {
+	background-position: -10px -53px;
+	opacity: 1;
+}
 .main-content {
 	padding-top: 80px;
 }
@@ -318,7 +322,7 @@ body {
 }
 .offer-block {
 	display: inline-block;
-	vertical-align: middle;
+	vertical-align: top;
 	width: 240px;
 	min-height: 300px;
 	margin-right: 80px;
@@ -956,7 +960,7 @@ input[type="checkbox"]:checked:disabled+label::before {
 }
 .paginator-page a:active {
 	background-color: #d5d5d5;
-	box-shadow: inset 0 0 0 2px #f2f2f2;
+	box-shadow: inset 0 2px 0 0 #b5b5b5;
 }
 .next {
 	width: 135px;
